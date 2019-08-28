@@ -1,0 +1,153 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Livvic", sans-serif; }
+    html nav, body nav {
+      z-index: 5;
+      position: fixed;
+      margin: 2% 0;
+      padding: 0 5%;
+      width: 90%;
+      top: 0;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      color: #f1f0d1; }
+      html nav .logo, body nav .logo {
+        height: 7vw;
+        width: 7vw;
+        background-image: url("../images/Cafe-logo.png");
+        background-size: cover;
+        background-position: center; }
+      html nav p, body nav p {
+        width: 20%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-family: "El Messiri", sans-serif;
+        font-size: 1.2em; }
+      html nav ul, body nav ul {
+        padding-left: 0;
+        margin-right: 5%;
+        width: 50%;
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        font-size: 1.2em; }
+        html nav ul li a, body nav ul li a {
+          font-size: 0.8em;
+          text-decoration: none;
+          color: #f1f0d1; }
+        html nav ul li:nth-child(4) a, body nav ul li:nth-child(4) a {
+          background-color: #aeeff0;
+          color: #584b42;
+          padding: 5px;
+          border-radius: 5px; }
+      html nav .burger, body nav .burger {
+        display: none; }
+        html nav .burger div, body nav .burger div {
+          width: 25px;
+          height: 3px;
+          background-color: #f1f0d1;
+          margin: 5px;
+          border-radius: 3px; }
+    html #landing .img-container1 .main-text-container, body #landing .img-container1 .main-text-container {
+      color: #f1f0d1; }
+      html #landing .img-container1 .main-text-container h1, body #landing .img-container1 .main-text-container h1 {
+        font-size: 2.5em;
+        font-family: "El Messiri", sans-serif; }
+      html #landing .img-container1 .main-text-container p, body #landing .img-container1 .main-text-container p {
+        font-size: 0.8em; }
+    html #extra .img-container2 span, html #extra .img-container2 p, body #extra .img-container2 span, body #extra .img-container2 p {
+      font-size: 0.8em; }
+    html #extra .img-container2 span, body #extra .img-container2 span {
+      font-family: "El Messiri", sans-serif;
+      font-size: 1.2em; }
+    html #beans .slide-container .slide .text-box h2, html #beans .slide-container .slide .text-box h3, body #beans .slide-container .slide .text-box h2, body #beans .slide-container .slide .text-box h3 {
+      font-size: 2.5em;
+      font-family: "El Messiri", sans-serif; }
+    html #beans .slide-container .slide .text-box h3, body #beans .slide-container .slide .text-box h3 {
+      font-size: 1.2em; }
+    html #beans .slide-container .slide .text-box p, html #beans .slide-container .slide .text-box ul, body #beans .slide-container .slide .text-box p, body #beans .slide-container .slide .text-box ul {
+      font-size: 0.8em; }
+    html #add .img-container3 p, body #add .img-container3 p {
+      font-size: 0.8em; }
+      html #add .img-container3 p span, body #add .img-container3 p span {
+        font-family: "El Messiri", sans-serif;
+        font-size: 2.5em; }
+    html #menu .drink-food-btn-container a, body #menu .drink-food-btn-container a {
+      font-family: "El Messiri", sans-serif;
+      font-size: 1.2em; }
+    html #menu .drink-food-btn-container a:nth-child(2), body #menu .drink-food-btn-container a:nth-child(2) {
+      background-color: #f0e3c4; }
+    html #menu .menu-container, body #menu .menu-container {
+      -webkit-box-shadow: 0px 0px 19px -1px #584b42;
+      -moz-box-shadow: 0px 0px 19px -1px #584b42;
+      box-shadow: 0px 0px 19px -1px #584b42;
+      color: #f1f0d1;
+      background-color: #584b42; }
+      html #menu .menu-container .collumn h3, body #menu .menu-container .collumn h3 {
+        font-size: 1.2em;
+        font-family: "El Messiri", sans-serif; }
+      html #menu .menu-container .collumn ul, body #menu .menu-container .collumn ul {
+        font-size: 0.8em; }
+    html #member, body #member {
+      margin: 0% 5% 2% 5%;
+      height: auto;
+      color: #584b42; }
+      html #member .member-text-container, body #member .member-text-container {
+        font-size: 0.8em; }
+        html #member .member-text-container .collumn, body #member .member-text-container .collumn {
+          background-color: #f1f0d1; }
+        html #member .member-text-container .collumn:nth-child(2), body #member .member-text-container .collumn:nth-child(2) {
+          background-color: #f0e3c4; }
+    html #blog, body #blog {
+      background-color: #584b42;
+      color: #f1f0d1; }
+      html #blog h3, body #blog h3 {
+        font-size: 1.2em;
+        font-family: "El Messiri", sans-serif; }
+      html #blog .card-container, body #blog .card-container {
+        font-size: 0.8em;
+        color: #584b42; }
+        html #blog .card-container .card, body #blog .card-container .card {
+          height: 300px;
+          background-color: #f1f0d1; }
+    html #contact .collumn-contact:nth-child(1), body #contact .collumn-contact:nth-child(1) {
+      font-size: 1.2em;
+      font-family: "El Messiri", sans-serif; }
+    html #contact .collumn-contact:nth-child(2), body #contact .collumn-contact:nth-child(2) {
+      font-size: 0.8em;
+      background-color: #f0e3c4; }
+      html #contact .collumn-contact:nth-child(2) form input:nth-child(3), body #contact .collumn-contact:nth-child(2) form input:nth-child(3) {
+        width: 80%; }
+    html #footer, body #footer {
+      margin: 0% 5%;
+      width: 90%;
+      height: auto;
+      background-color: white;
+      color: #584b42;
+      font-size: 1.2em;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center; }
+      html #footer .logo, body #footer .logo {
+        margin-left: 5%;
+        height: 7vw;
+        width: 7vw;
+        background-image: url("../images/Cafe-logo-dark.png");
+        background-size: cover;
+        background-position: center; }
+      html #footer p, body #footer p {
+        width: auto; }
+      html #footer p:nth-child(3), body #footer p:nth-child(3) {
+        margin: 0;
+        margin-left: 15%; } }
+
+/*# sourceMappingURL=mid.css.map */

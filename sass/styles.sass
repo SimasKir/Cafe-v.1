@@ -1,0 +1,637 @@
+$accent: #aeeff0
+$primary-light: #f1f0d1
+$primary-mid: #f0e3c4
+$primary-dark: #584b42
+
+$font-primary: 'El Messiri', sans-serif
+$font-secondary: 'Livvic', sans-serif
+
+$font-size-primary: 3em
+$font-size-secondary: 1.2em
+$font-size-small: 0.95em
+
+=shadow()
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(88,75,66,1)
+    -moz-box-shadow: 0px 0px 19px -1px rgba(88,75,66,1)
+    box-shadow: 0px 0px 19px -1px rgba(88,75,66,1)
+=btn-shadow()
+    -webkit-box-shadow: 0px 0px 19px 0px #f1f0d1
+    -moz-box-shadow: 0px 0px 19px 0px #f1f0d1
+    box-shadow: 0px 0px 19px 0px #f1f0d1
+= flex()
+    display: flex
+    align-content: center
+=transition()
+    transition: all 0.3s ease-out
+
+html, body
+    scroll-behavior: smooth
+    margin: 0
+    padding: 0
+    font-family: $font-secondary
+    nav
+        z-index: 5
+        position: fixed
+        margin: 2% 0
+        padding: 0 5%
+        width: 90%
+        top: 0
+        +flex
+        align-items: center
+        color: $primary-light
+        .logo
+            height: 7vw
+            width: 7vw
+            background-image: url("../images/Cafe-logo.png")
+            background-size: cover
+            background-position: center
+        p
+            width: 20%
+            +flex
+            align-items: center
+            font-family: $font-primary
+            font-size: $font-size-secondary
+        ul
+            margin-left: 30%
+            width: 35%
+            +flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            list-style-type: none
+            font-size: $font-size-secondary
+            li
+                a
+                    font-size: $font-size-small
+                    text-decoration: none
+                    color: $primary-light
+            li:nth-child(4)
+                a
+                    background-color: $accent
+                    color: $primary-dark
+                    padding: 5px
+                    border-radius: 5px
+        .burger
+            display: none
+            div
+                width: 25px
+                height: 3px
+                background-color: $primary-light
+                margin: 5px
+                border-radius: 3px
+
+    #landing
+        +shadow
+        display: block
+        width: 90%
+        height: auto
+        min-height: 500px
+        margin: 0% 5% 2% 5%
+        .img-container1
+            margin-top: 2%
+            width: 100%
+            overflow-x: hidden
+            height: 90vh
+            min-height: 500px
+            background-image: url("../images/landing-img6.jpg")
+            background-size: cover
+            background-position: center
+            .main-text-container
+                z-index: 5
+                width: 35%
+                height: 100%
+                +flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                padding-left: 3%
+                color: $primary-light
+                h1
+                    font-size: $font-size-primary
+                    font-family: $font-primary
+                    padding-top: 15%
+                p
+                    margin-top: 0
+                    font-size: $font-size-small
+                .button-box
+                    +flex
+                    justify-content: center
+                    align-items: center
+                    .button
+                        +transition
+                        margin-top: 15px
+                        font-size: $font-size-secondary
+                        text-decoration: none
+                        width: 200px
+                        height: 50px
+                        +flex
+                        justify-content: center
+                        align-items: center
+                        background-color: $accent
+                        color: $primary-dark
+                        border-radius: 5px
+                        &:hover
+                            +transition
+                            color: $primary-light
+                            background-color: $primary-dark
+                            +btn-shadow
+                            transform: scale(1.1)
+    #extra
+        margin: 0% 5% 2% 5%
+        width: 90%
+        height: 200px
+        .img-container2
+            height: 100%
+            background-image: url("../images/beans.jpg")
+            background-size: cover
+            background-position: center
+            color: $primary-light
+            +flex
+            flex-direction: row
+            span, p
+                font-size: $font-size-small
+                width: 50%
+                +flex
+                justify-content: center
+                align-items: center
+            span
+                font-family: $font-primary
+                font-size: 2em
+    #beans
+        +shadow
+        margin: 0% 5% 2% 5%
+        width: 90%
+        height: auto
+        color: $primary-light
+        .slide-container
+            position: relative
+            width: 100%
+            height: 100vh
+            #left-btn
+                position: absolute
+                top: 50%
+                height: 50px
+                width: 50px
+                font-size: 35px
+                background-color: $primary-light
+                z-index: 2
+                left: 2%
+                border-radius: 50%
+                +flex
+                justify-content: center
+                align-items: center
+                +transition
+                &:hover
+                    +transition
+                    background-color: $primary-dark
+                    +btn-shadow
+                    transform: scale(1.2)
+                &:hover > span
+                    color: $primary-light
+                span
+                    color: $primary-dark
+                    position: absolute
+                    top: 0
+                    right: 6px
+                    width: 30px
+                    height: auto
+            #right-btn
+                position: absolute
+                border-radius: 50%
+                font-size: 35px
+                top: 50%
+                height: 50px
+                width: 50px
+                background-color: $primary-light
+                z-index: 2
+                right: 2%
+                +transition
+                &:hover
+                    +transition
+                    background-color: $primary-dark
+                    +btn-shadow
+                    transform: scale(1.2)
+                &:hover > span
+                    color: $primary-light
+                span
+                    color: $primary-dark
+                    position: absolute
+                    top: 0
+                    left: 14px
+                    width: 30px
+                    height: auto
+            .slide
+                width: 100%
+                height: 100%
+                display: none
+                z-index: 1
+                .text-box
+                    border-left: 1px solid $primary-light
+                    border-right: 1px solid $primary-light
+                    position: relative
+                    width: 50%
+                    margin: 0 auto
+                    top: 10%
+                    height: 80%
+                    +flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    h2, h3
+                        font-size: $font-size-primary
+                        font-family: $font-primary
+                    h3
+                        font-size: $font-size-secondary
+                    p, ul
+                        width: 80%
+                        font-size: $font-size-small
+            .slide:nth-child(1)
+                display: block
+                background-image: url("../images/brasil.jpg")
+                background-size: cover
+                background-position: center
+            .slide:nth-child(2)
+                background-image: url("../images/ethiopia.jpg")
+                background-size: cover
+                background-position: center
+            .slide:nth-child(3)
+                background-image: url("../images/india.jpg")
+                background-size: cover
+                background-position: center
+            .slide:nth-child(4)
+                background-image: url("../images/java.jpg")
+                background-size: cover
+                background-position: center
+    #add
+        display: block
+        margin: 0% 5% 2% 5%
+        width: 90%
+        height: 200px
+        .img-container3
+            height: 100%
+            background-image: url("../images/add-img.jpg")
+            background-size: cover
+            background-position: center
+            color: $primary-light
+            +flex
+            justify-content: center
+            align-items: center
+            p
+                +flex
+                justify-content: center
+                align-items: center
+                font-size: $font-size-small
+                span
+                    font-family: $font-primary
+                    font-size: $font-size-primary
+                    margin: 0 5px
+
+    #menu
+        margin: 0% 5% 2% 5%
+        width: 90%
+        height: auto
+        .drink-food-btn-container
+            +shadow
+            width: 100%
+            height: 50px
+            +flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            margin-bottom: 2%
+            color: $primary-dark
+            background-color: $primary-light
+            border-radius: 5px
+            a
+                font-family: $font-primary
+                font-size: $font-size-secondary
+                +flex
+                border-radius: 5px
+                justify-content: center
+                align-items: center
+                height: 100%
+                width: 50%
+            a:nth-child(2)
+                background-color: $primary-mid
+        .menu-container
+            +shadow
+            height: auto
+            width: 100%
+            color: $primary-light
+            background-color: $primary-dark
+            .row:nth-child(1)
+                height: 300px
+                width: 100%
+                +flex
+                flex-direction: row
+                .collumn:nth-child(1)
+                    height: 100%
+                    width: 50%
+                    +flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                .collumn:nth-child(2)
+                    height: 100%
+                    width: 50%
+                    background-image: url("../images/coffee-menu.jpg")
+                    background-size: cover
+                    background-position: center
+            .row:nth-child(2)
+                height: 300px
+                width: 100%
+                +flex
+                flex-direction: row
+                .collumn:nth-child(2)
+                    height: 100%
+                    width: 50%
+                    +flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                .collumn:nth-child(1)
+                    height: 100%
+                    width: 50%
+                    background-image: url("../images/teas-menu.jpg")
+                    background-size: cover
+                    background-position: center
+            .row:nth-child(3)
+                height: 300px
+                width: 100%
+                +flex
+                flex-direction: row
+                .collumn:nth-child(1)
+                    height: 100%
+                    width: 50%
+                    +flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                .collumn:nth-child(2)
+                    height: 100%
+                    width: 50%
+                    background-image: url("../images/milkshakes-menu.jpg")
+                    background-size: cover
+                    background-position: center
+            .collumn
+                h3
+                    font-size: $font-size-secondary
+                    font-family: $font-primary
+                ul
+                    list-style-type: none
+                    width: 20%
+                    font-size: $font-size-small
+                    li
+                        margin-bottom: 5px
+    #member
+        margin: 0% 5%
+        width: 90%
+        height: 300px
+        position: relative
+        color: $primary-dark
+        .img-container3
+            position: absolute
+            left: 38%
+            top: 0
+            width: 22vw
+            height: 22vw
+            background-image: url("../images/member-card.jpg")
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+        .member-text-container
+            width: 100%
+            height: 200px
+            +flex
+            flex-direction: row
+            justify-content: center
+            font-size: $font-size-small
+            .collumn
+                +flex
+                justify-content: center
+                align-items: center
+                width: 50%
+                background-color: $primary-light
+                p
+                    margin: 0
+                    width: 30%
+                    +flex
+                    justify-content: center
+                    align-items: center
+            .collumn:nth-child(2)
+                background-color: $primary-mid
+    #blog
+        +shadow
+        margin: 0% 5% 2% 5%
+        padding-bottom: 2%
+        width: 90%
+        height: auto
+        background-color: $primary-dark
+        color: $primary-light
+        h3
+            font-size: $font-size-secondary
+            font-family: $font-primary
+            text-align: center
+            padding-top: 2%
+            margin-top: 0
+        .card-container
+            font-size: $font-size-small
+            color: $primary-dark
+            width: 100%
+            height: auto
+            +flex
+            flex-direction: row
+            justify-content: space-around
+            .card
+                width: 25%
+                height: 400px
+                background-color: $primary-light
+                .img-container4
+                    width: 100%
+                    height: 50%
+                    overflow: hidden
+                    .img-div
+                        width: 100%
+                        height: 100%
+                        background-image: url("../images/beans.jpg")
+                        background-size: cover
+                        background-position: center
+                        background-repeat: no-repeat
+                &:hover > .img-container4 .img-div
+                        transition: 1s ease-out
+                        transform: scale(1.5)
+                .card-text-container
+                    height: 50%
+                    +flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+
+                    .arrow, p, span
+                        width: 50%
+                    .arrow
+                        height: 30px
+                        position: relative
+                        .arrow-main
+                            position: absolute
+                            top: 50%
+                            width: 25px
+                            height: 4px
+                            background-color: $accent
+                        .top
+                            transform: rotate(45deg)
+                            position: absolute
+                            top: 38%
+                            left: 11%
+                            width: 14px
+                            height: 4px
+                            background-color: $accent
+                            opacity: 0
+                        .bottom
+                            transform: rotate(-45deg)
+                            position: absolute
+                            top: 60%
+                            left: 11%
+                            width: 14px
+                            height: 4px
+                            background-color: $accent
+                            opacity: 0
+                &:hover > .card-text-container .arrow .arrow-extra
+                    opacity: 1
+                    transition: 1s ease-out
+            .card:nth-child(1)
+                .img-container4
+                    .img-div
+                        background-image: url("../images/picking-beans.jpg")
+            .card:nth-child(2)
+                .img-container4
+                    .img-div
+                        background-image: url("../images/latte-art.jpg")
+            .card:nth-child(3)
+                .img-container4
+                    .img-div
+                        background-image: url("../images/brewing.jpg")
+    #contact
+        +shadow
+        margin: 0% 5% 2% 5%
+        width: 90%
+        height: 300px
+        background-color: $primary-light
+        color: $primary-dark
+        +flex
+        flex-direction: row
+        .collumn-contact
+            width: 20%
+            height: 100%
+        .collumn-contact:nth-child(1)
+            font-size: $font-size-secondary
+            font-family: $font-primary
+            +shadow
+            background-color: $primary-dark
+            color: $primary-light
+            +flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            z-index: 2
+        .collumn-contact:nth-child(2)
+            font-size: $font-size-small
+            background-color: $primary-mid
+            +flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            form
+                +flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                input:nth-child(3)
+                    padding: 5px
+                    width: 90%
+                    background: $primary-light
+                    border: 1px solid $primary-dark
+                    border-radius: 5px
+                    color: $primary-dark
+                input:nth-child(5)
+                    font-size: $font-size-small
+                    font-family: $font-secondary
+                    padding: 5px
+                    width: 50%
+                    +flex
+                    justify-content: center
+                    align-items: center
+                    background-color: $accent
+                    color: $primary-dark
+                    border-radius: 5px
+                    border-style: none
+                    &:hover
+                        +shadow
+                        color: $primary-light
+                        background-color: $primary-dark
+                        transform: scale(1.1)
+        .collumn-contact:nth-child(3)
+            +flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .social
+                height: 100%
+                +flex
+                flex-direction: column
+                justify-content: space-around
+                align-items: center
+                .social-icon
+                    width: 50px
+                    height: 50px
+                    background-color: transparent
+                    img
+                        filter: invert(28%) sepia(6%) saturate(1416%) hue-rotate(342deg) brightness(94%) contrast(84%)
+                        width: 50px
+                        height: 50px
+                        +transition
+                    &:hover > img
+                        +transition
+                        transform: scale(1.2)
+        .collumn-contact:nth-child(4)
+            font-size: $font-size-secondary
+            font-family: $font-primary
+            z-index: 2
+            +shadow
+            background-color: $primary-dark
+            color: $primary-light
+            +flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        .collumn-contact:nth-child(5)
+            font-size: $font-size-small
+            background-color: $primary-mid
+            +flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+    #footer
+        margin: 0% 5%
+        width: 90%
+        height: auto
+        background-color: white
+        color: $primary-dark
+        font-size: $font-size-secondary
+        +flex
+        justify-content: center
+        align-items: center
+        .logo
+            margin-left: 5%
+            height: 7vw
+            width: 7vw
+            background-image: url("../images/Cafe-logo-dark.png")
+            background-size: cover
+            background-position: center
+        p:nth-child(3)
+            margin-left: 55%
+
+
+@media (min-width: 320px) and (max-width: 480px)
+
+//CSS

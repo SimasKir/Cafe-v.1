@@ -1,0 +1,232 @@
+@media (max-width: 767px) {
+  html {
+    overflow-x: hidden; }
+    html nav {
+      padding: 0;
+      width: 100%; }
+      html nav ul {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        right: 0;
+        width: 20%;
+        margin: 0;
+        transform: translateX(100%);
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 5; }
+        html nav ul li {
+          margin: 5px; }
+          html nav ul li a {
+            font-size: 0.7em;
+            color: #584b42; }
+        html nav ul li:nth-child(4) a {
+          background-color: #aeeff0;
+          color: #584b42;
+          padding: 5px;
+          border-radius: 5px; }
+      html nav .burger {
+        display: block;
+        z-index: 6; }
+        html nav .burger div {
+          margin-left: 59vw; }
+    html #landing {
+      width: 100%;
+      margin: 0% 0% 2% 0%; }
+      html #landing .img-container1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/landing-img6.jpg"); }
+        html #landing .img-container1 .main-text-container {
+          width: 100%; }
+          html #landing .img-container1 .main-text-container h1 {
+            font-size: 2em;
+            font-family: "El Messiri", sans-serif; }
+          html #landing .img-container1 .main-text-container p {
+            margin: 0 5%;
+            font-size: 0.7em; }
+          html #landing .img-container1 .main-text-container .button-box .button {
+            margin-top: 30px;
+            font-size: 1.2em;
+            background-color: #aeeff0;
+            color: #584b42; }
+            html #landing .img-container1 .main-text-container .button-box .button:hover {
+              color: #f1f0d1;
+              background-color: #584b42; }
+    html #extra {
+      display: block;
+      margin: 0% 0% 2% 0%;
+      width: 100%;
+      height: auto; }
+      html #extra .img-container2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/beans.jpg");
+        color: #f1f0d1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        html #extra .img-container2 span, html #extra .img-container2 p {
+          font-size: 0.7em;
+          width: 80%; }
+        html #extra .img-container2 span {
+          padding-top: 10px;
+          font-family: "El Messiri", sans-serif;
+          font-size: 1.2em; }
+    html #beans {
+      margin: 0% 0% 2% 0%;
+      width: 100%;
+      color: #f1f0d1; }
+      html #beans .slide-container #left-btn {
+        background-color: #f1f0d1; }
+        html #beans .slide-container #left-btn:hover {
+          background-color: #584b42; }
+        html #beans .slide-container #left-btn:hover > span {
+          color: #f1f0d1; }
+        html #beans .slide-container #left-btn span {
+          color: #584b42; }
+      html #beans .slide-container #right-btn {
+        background-color: #f1f0d1; }
+        html #beans .slide-container #right-btn:hover {
+          background-color: #584b42; }
+        html #beans .slide-container #right-btn:hover > span {
+          color: #f1f0d1; }
+        html #beans .slide-container #right-btn span {
+          color: #584b42; }
+      html #beans .slide-container .slide .text-box {
+        border-left: 1px solid #f1f0d1;
+        border-right: 1px solid #f1f0d1; }
+        html #beans .slide-container .slide .text-box h2, html #beans .slide-container .slide .text-box h3 {
+          font-size: 2em;
+          font-family: "El Messiri", sans-serif; }
+        html #beans .slide-container .slide .text-box h3 {
+          font-size: 1.2em; }
+        html #beans .slide-container .slide .text-box p, html #beans .slide-container .slide .text-box ul {
+          font-size: 0.7em; }
+    html #add {
+      margin: 0% 0% 2% 0%;
+      width: 100%; }
+      html #add .img-container3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/add-img.jpg");
+        color: #f1f0d1; }
+        html #add .img-container3 p {
+          font-size: 0.7em; }
+          html #add .img-container3 p span {
+            font-family: "El Messiri", sans-serif;
+            font-size: 2em; }
+    html #menu {
+      margin: 0% 0% 2% 0%;
+      width: 100%; }
+      html #menu .drink-food-btn-container {
+        color: #584b42;
+        background-color: #f1f0d1; }
+        html #menu .drink-food-btn-container a {
+          font-family: "El Messiri", sans-serif;
+          font-size: 1.2em; }
+        html #menu .drink-food-btn-container a:nth-child(2) {
+          background-color: #f0e3c4; }
+      html #menu .menu-container {
+        color: #f1f0d1;
+        background-color: #584b42; }
+        html #menu .menu-container .collumn h3 {
+          font-size: 1.2em;
+          font-family: "El Messiri", sans-serif; }
+        html #menu .menu-container .collumn ul {
+          padding: 0;
+          width: 100%;
+          text-align: center;
+          font-size: 0.7em; }
+    html #member {
+      margin: 0% 0% 2% 0%;
+      width: 100%;
+      height: 200px;
+      color: #584b42; }
+      html #member .img-container3 {
+        top: 15%;
+        width: 25vw;
+        height: 25vw; }
+      html #member .member-text-container {
+        font-size: 0.7em; }
+        html #member .member-text-container .collumn {
+          background-color: #f1f0d1; }
+          html #member .member-text-container .collumn p {
+            width: 40% s; }
+        html #member .member-text-container .collumn:nth-child(2) {
+          background-color: #f0e3c4; }
+    html #blog {
+      margin: 0% 0% 2% 0%;
+      width: 100%;
+      background-color: #584b42;
+      color: #f1f0d1; }
+      html #blog h3 {
+        font-size: 1.2em;
+        font-family: "El Messiri", sans-serif;
+        padding-top: 4%; }
+      html #blog .card-container {
+        font-size: 0.7em;
+        color: #584b42;
+        flex-direction: column; }
+        html #blog .card-container .card {
+          margin: 0 25%;
+          margin-bottom: 2%;
+          width: 50%;
+          height: 400px;
+          background-color: #f1f0d1; }
+    html #contact {
+      margin: 0% 0% 2% 0%;
+      width: 100%;
+      height: auto;
+      background-color: #f1f0d1;
+      color: #584b42;
+      flex-direction: column; }
+      html #contact .collumn-contact {
+        width: 100%;
+        height: auto; }
+      html #contact .collumn-contact:nth-child(1) {
+        font-size: 1.2em;
+        font-family: "El Messiri", sans-serif;
+        background-color: #584b42;
+        color: #f1f0d1;
+        flex-direction: row; }
+        html #contact .collumn-contact:nth-child(1) p {
+          margin: 4%; }
+      html #contact .collumn-contact:nth-child(2) {
+        font-size: 0.7em;
+        background-color: #f0e3c4; }
+        html #contact .collumn-contact:nth-child(2) form {
+          padding: 4%; }
+          html #contact .collumn-contact:nth-child(2) form input:nth-child(3) {
+            background: #f1f0d1;
+            border: 1px solid #584b42;
+            color: #584b42; }
+          html #contact .collumn-contact:nth-child(2) form input:nth-child(5) {
+            font-size: 0.7em;
+            font-family: "Livvic", sans-serif;
+            background-color: #aeeff0;
+            color: #584b42; }
+            html #contact .collumn-contact:nth-child(2) form input:nth-child(5):hover {
+              color: #f1f0d1;
+              background-color: #584b42; }
+      html #contact .collumn-contact:nth-child(3) .social {
+        flex-direction: row; }
+        html #contact .collumn-contact:nth-child(3) .social .social-icon {
+          padding: 4%; }
+      html #contact .collumn-contact:nth-child(4) {
+        font-size: 1.2em;
+        font-family: "El Messiri", sans-serif;
+        background-color: #584b42;
+        color: #f1f0d1;
+        flex-direction: row; }
+        html #contact .collumn-contact:nth-child(4) p {
+          margin: 4%; }
+      html #contact .collumn-contact:nth-child(5) {
+        padding: 2%;
+        font-size: 0.7em;
+        background-color: #f0e3c4; }
+    html #footer {
+      margin: 0% 5%;
+      width: 90%;
+      color: #584b42;
+      font-size: 0.7em; }
+      html #footer p:nth-child(3) {
+        width: 30%;
+        margin-left: 30%; } }
+
+/*# sourceMappingURL=mobile.css.map */

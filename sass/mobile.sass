@@ -1,0 +1,266 @@
+@media (max-width: 767px)
+    $accent: #aeeff0
+    $primary-light: #f1f0d1
+    $primary-mid: #f0e3c4
+    $primary-dark: #584b42
+
+    $font-primary: 'El Messiri', sans-serif
+    $font-secondary: 'Livvic', sans-serif
+
+    $font-size-primary: 2em
+    $font-size-secondary: 1.2em
+    $font-size-small: 0.7em
+
+    =shadow()
+        -webkit-box-shadow: 0px 0px 19px -1px rgba(88,75,66,1)
+        -moz-box-shadow: 0px 0px 19px -1px rgba(88,75,66,1)
+        box-shadow: 0px 0px 19px -1px rgba(88,75,66,1)
+    =btn-shadow()
+        -webkit-box-shadow: 0px 0px 19px 0px #f1f0d1
+        -moz-box-shadow: 0px 0px 19px 0px #f1f0d1
+        box-shadow: 0px 0px 19px 0px #f1f0d1
+    = flex()
+        display: flex
+        align-content: center
+    html
+        overflow-x: hidden
+        nav
+            padding: 0
+            width: 100%
+            ul
+                position: absolute
+                top: 0
+                height: 100vh
+                right: 0
+                width: 20%
+                margin: 0
+                transform: translateX(100%)
+                background-color: white
+                flex-direction: column
+                justify-content: center
+                z-index: 5
+                li
+                    margin: 5px
+                    a
+                        font-size: $font-size-small
+                        color: $primary-dark
+                li:nth-child(4)
+                    a
+                        background-color: $accent
+                        color: $primary-dark
+                        padding: 5px
+                        border-radius: 5px
+            .burger
+                display: block
+                z-index: 6
+                div
+                    margin-left: 59vw
+
+        #landing
+            width: 100%
+            margin: 0% 0% 2% 0%
+            .img-container1
+                background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/landing-img6.jpg")
+                .main-text-container
+                    width: 100%
+                    h1
+                        font-size: $font-size-primary
+                        font-family: $font-primary
+                    p
+                        margin: 0 5%
+                        font-size: $font-size-small
+                    .button-box
+                        .button
+                            margin-top: 30px
+                            font-size: $font-size-secondary
+                            background-color: $accent
+                            color: $primary-dark
+                            &:hover
+                                color: $primary-light
+                                background-color: $primary-dark
+        #extra
+            display: block
+            margin: 0% 0% 2% 0%
+            width: 100%
+            height: auto
+            .img-container2
+                background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/beans.jpg")
+                color: $primary-light
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                span, p
+                    font-size: $font-size-small
+                    width: 80%
+                span
+                    padding-top: 10px
+                    font-family: $font-primary
+                    font-size: $font-size-secondary
+        #beans
+            margin: 0% 0% 2% 0%
+            width: 100%
+            color: $primary-light
+            .slide-container
+                #left-btn
+                    background-color: $primary-light
+                    &:hover
+                        background-color: $primary-dark
+                    &:hover > span
+                        color: $primary-light
+                    span
+                        color: $primary-dark
+                #right-btn
+                    background-color: $primary-light
+                    &:hover
+                        background-color: $primary-dark
+                    &:hover > span
+                        color: $primary-light
+                    span
+                        color: $primary-dark
+
+                .slide
+                    .text-box
+                        border-left: 1px solid $primary-light
+                        border-right: 1px solid $primary-light
+                        h2, h3
+                            font-size: $font-size-primary
+                            font-family: $font-primary
+                        h3
+                            font-size: $font-size-secondary
+                        p, ul
+                            font-size: $font-size-small
+
+        #add
+            margin: 0% 0% 2% 0%
+            width: 100%
+            .img-container3
+                background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url("../images/add-img.jpg")
+                color: $primary-light
+                p
+                    font-size: $font-size-small
+                    span
+                        font-family: $font-primary
+                        font-size: $font-size-primary
+
+        #menu
+            margin: 0% 0% 2% 0%
+            width: 100%
+            .drink-food-btn-container
+                color: $primary-dark
+                background-color: $primary-light
+                a
+                    font-family: $font-primary
+                    font-size: $font-size-secondary
+                a:nth-child(2)
+                    background-color: $primary-mid
+            .menu-container
+                color: $primary-light
+                background-color: $primary-dark
+                .collumn
+                    h3
+                        font-size: $font-size-secondary
+                        font-family: $font-primary
+                    ul
+                        padding: 0
+                        width: 100%
+                        text-align: center
+                        font-size: $font-size-small
+
+
+        #member
+            margin: 0% 0% 2% 0%
+            width: 100%
+            height: 200px
+            color: $primary-dark
+            .img-container3
+                top: 15%
+                width: 25vw
+                height: 25vw
+            .member-text-container
+                font-size: $font-size-small
+                .collumn
+                    background-color: $primary-light
+                    p
+                        width: 40%s
+                .collumn:nth-child(2)
+                    background-color: $primary-mid
+        #blog
+            margin: 0% 0% 2% 0%
+            width: 100%
+            background-color: $primary-dark
+            color: $primary-light
+            h3
+                font-size: $font-size-secondary
+                font-family: $font-primary
+                padding-top: 4%
+            .card-container
+                font-size: $font-size-small
+                color: $primary-dark
+                flex-direction: column
+                .card
+                    margin: 0 25%
+                    margin-bottom: 2%
+                    width: 50%
+                    height: 400px
+                    background-color: $primary-light
+
+        #contact
+            margin: 0% 0% 2% 0%
+            width: 100%
+            height: auto
+            background-color: $primary-light
+            color: $primary-dark
+            flex-direction: column
+            .collumn-contact
+                width: 100%
+                height: auto
+            .collumn-contact:nth-child(1)
+                font-size: $font-size-secondary
+                font-family: $font-primary
+                background-color: $primary-dark
+                color: $primary-light
+                flex-direction: row
+                p
+                    margin: 4%
+            .collumn-contact:nth-child(2)
+                font-size: $font-size-small
+                background-color: $primary-mid
+                form
+                    padding: 4%
+                    input:nth-child(3)
+                        background: $primary-light
+                        border: 1px solid $primary-dark
+                        color: $primary-dark
+                    input:nth-child(5)
+                        font-size: $font-size-small
+                        font-family: $font-secondary
+                        background-color: $accent
+                        color: $primary-dark
+                        &:hover
+                            color: $primary-light
+                            background-color: $primary-dark
+            .collumn-contact:nth-child(3)
+                .social
+                    flex-direction: row
+                    .social-icon
+                        padding: 4%
+            .collumn-contact:nth-child(4)
+                font-size: $font-size-secondary
+                font-family: $font-primary
+                background-color: $primary-dark
+                color: $primary-light
+                flex-direction: row
+                p
+                    margin: 4%
+            .collumn-contact:nth-child(5)
+                padding: 2%
+                font-size: $font-size-small
+                background-color: $primary-mid
+        #footer
+            margin: 0% 5%
+            width: 90%
+            color: $primary-dark
+            font-size: $font-size-small
+            p:nth-child(3)
+                width: 30%
+                margin-left: 30%

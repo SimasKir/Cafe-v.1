@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mid.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"></div>
+        <p>Coffee World</p>
+        <ul>
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#beans">Our coffee</a></li>
+            <li><a href="#menu">Our menu</a></li>
+            <li><a href="#contact">Find us</a></li>
+        </ul>
+        <div class="burger" onclick="slideOut()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div id="landing">
+        <div class="img-container1">
+            <div class="main-text-container">
+                <h1>Taste the world</h1>
+                <p>Our love for specialty coffee is never-ending. With over 365 days a year at origin working with the best growers on the planet, only the best beans make the grade. Countless hours cupping and testing our blends means consistently amazing coffee, so your morning starts right every time.</p>
+                <div class="button-box">
+                    <a href="#beans" class="button">Explore our beans</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="extra">
+        <div class="img-container2">
+            <span>Our coffees - our Pride</span>
+            <p>To source the world's greatest coffee, we travel from one end of the tropic to the other to seek out hand-selected coffees directly from the best estates and small farms, ensuring the quality of our product.</p>
+        </div>
+    </div>
+
+    <div id="beans">
+        <div class="slide-container">
+            <div class="slide">
+                <div class="text-box">
+                    <h2>Brasil</h2>
+                    <p>Brazil is a coffee giant producing over 40 percent of the world's coffee! A great high quality Brazil coffee is soft, nutty, low acid, with nice bittersweet chocolate tastes. A good Brazil coffee can add a lot to espresso blends, and is great straight!</p>
+                    <h3>Taste profile</h3>
+                    <ul>
+                        <li>Cup Profile: Soft, Mild, and Nutty</li>
+                        <li>Botanical Varieties: Bourbon, Typica, Caturra, Catuai, Catimor, Maragogype, others</li>
+                        <li>Growing Regions: Minas Gerais, Sao Paulo, Espirito Santo, Rio De Janerio, Bahia, Goias, Rondonia, Parana</li>
+                        <li>Wet Processed: Yes</li>
+                        <li>Dry Processed: Yes</li>
+                        <li>Altitude: Meters 800-1200</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="text-box">
+                    <h2>Ethiopia</h2>
+                    <p>Ethiopia is the birthplace of coffee. The regal coffees from this country are deserving of such a heritage and stand up to the calling. Referring to Ethiopia as a country of single origin, however, is misleading. Coffees from the different growing regions vary so incredibly that they do not even seem to be from the same planet!</p>
+                    <h3>Taste profile</h3>
+                    <ul>
+                        <li>Cup Profile: Yergacheffes are Floral and Citrusy. Harrars are Jammy and Wild</li>
+                        <li>Botanical Varieties: Native Arabica</li>
+                        <li>Growing Regions: Harrar, Sidamo, Yergacheffe, Limmu, Djimmah, Lekempti, Bebeka</li>
+                        <li>Wet Processed: Yergacheffe, Sidamo, Limu, Bebeka</li>
+                        <li>Dry Processed: Harrar, Sidamo, Djimmah</li>
+                        <li>Altitude Meters: 1500-1800</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="text-box">
+                    <h2>India</h2>
+                    <p>Indian coffees sometime seem to get lost among the chaos and crowds of this enormous universe of a country. This is a shame since they are a wonderful part of the coffee spectrum, with low acidity, medium to full body, and subtly spiced in the cup.</p>
+                    <h3>Taste profile</h3>
+                    <ul>
+                        <li>Cup Profile: Full Bodied with low acidity</li>
+                        <li>Botanical Varieties: Kent, Cauwery, San Ramom</li>
+                        <li>Growing Regions: Karnataka, Mysore, Kerala, malabar, Tamilnadu</li>
+                        <li>Wet Processed: Yes</li>
+                        <li>Dry Processed: Yes</li>
+                        <li>Altitude: Meters 1000-1600</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="text-box">
+                    <h2>Java</h2>
+                    <p>Javanese coffees are brighter and cleaner Indonesian coffees. Javanese coffees are fully wet processed, unlike Sumatrans, and this process kicks off the acidity, drops the body, and reduces the earthiness of the cup a tad, while retaining the overall Indo funk.</p>
+                    <h3>Taste profile</h3>
+                    <ul>
+                        <li>Cup Profile: Clean Sumatran without the Earthiness, Good Body</li>
+                        <li>Botanical Varieties: Arabica</li>
+                        <li>Growing Regions: Eastern, Central, and Western Island of Java</li>
+                        <li>Wet Processed: Yes</li>
+                        <li>Altitude: Meters 800-1400</li>
+                    </ul>
+                </div>
+            </div>
+            <a onclick="plusOne()" id="right-btn"><span>&gt;</span></a>
+            <a onclick="minusOne()" id="left-btn"><span>&#60;</span></a>
+        </div>
+
+    </div>
+
+    <div id="add">
+        <div class="img-container3">
+            <p>Buy one cup, get second one for <span>50%</span> off !</p>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div class="drink-food-btn-container">
+            <a onclick="changeDrinks()">Drinks</a>
+            <a onclick="changeFood()">Food</a>
+        </div>
+
+        <div class="menu-container">
+            <div class="row">
+                <div class="collumn">
+                    <h3>Coffee</h3>
+                    <ul>
+                        <li>Flat White</li>
+                        <li>Latte</li>
+                        <li>Cappucino</li>
+                        <li>Long Black</li>
+                        <li>Espresso</li>
+                        <li>Macchiato</li>
+                    </ul>
+                </div>
+                <div class="collumn"></div>
+            </div>
+            <div class="row">
+                <div class="collumn"></div>
+                <div class="collumn">
+                    <h3>Coffee</h3>
+                    <ul>
+                        <li>Flat White</li>
+                        <li>Latte</li>
+                        <li>Cappucino</li>
+                        <li>Long Black</li>
+                        <li>Espresso</li>
+                        <li>Macchiato</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="collumn">
+                    <h3>Coffee</h3>
+                    <ul>
+                        <li>Flat White</li>
+                        <li>Latte</li>
+                        <li>Cappucino</li>
+                        <li>Long Black</li>
+                        <li>Espresso</li>
+                    </ul>
+                </div>
+                <div class="collumn"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="member">
+        <div class="member-text-container">
+            <div class="collumn">
+                <p>Our exclusive card offers you great deals throughout the year. Also, collect points and receive great prizes!</p>
+            </div>
+            <div class="collumn">
+                <p>To get our members card, please ask our wonderful baristas to sign up.</p>
+            </div>
+        </div>
+        <div class="img-container3"></div>
+    </div>
+
+    <div id="blog">
+        <h3>Our latest Blog posts</h3>
+        <div class="card-container">
+            <div class="card">
+                <div class="img-container4">
+                    <div class="img-div"></div>
+                </div>
+                <div class="card-text-container">
+                    <div class="arrow">
+                        <div class="arrow-main"></div>
+                        <div class="arrow-extra top"></div>
+                        <div class="arrow-extra bottom"></div>
+                    </div>
+                    <p>Picking Beans</p>
+                    <span>Read More...</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container4">
+                    <div class="img-div"></div>
+                </div>
+                <div class="card-text-container">
+                    <div class="arrow">
+                        <div class="arrow-main"></div>
+                        <div class="arrow-extra top"></div>
+                        <div class="arrow-extra bottom"></div>
+                    </div>
+                    <p>Latte Art</p>
+                    <span>Read More...</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container4">
+                    <div class="img-div"></div>
+                </div>
+                <div class="card-text-container">
+                    <div class="arrow">
+                        <div class="arrow-main"></div>
+                        <div class="arrow-extra top"></div>
+                        <div class="arrow-extra bottom"></div>
+                    </div>
+                    <p>Brewing techniques</p>
+                    <span>Read More...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="collumn-contact">
+            <p>Stay</p>
+            <p>in</p>
+            <p>Touch</p>
+        </div>
+        <div class="collumn-contact">
+            <form class="" action="index.html" method="post">
+                <p>Get our newsletter!</p>
+                <p>Your email address:</p>
+                <input type="email" name="" value=""></br>
+                <input type="submit" name="" value="Press">
+            </form>
+        </div>
+        <div class="collumn-contact">
+            <div class="social">
+                <div class="facebook social-icon">
+                    <img src="../images/facebook-letter-logo.svg" alt="Facebook">
+                </div>
+                <div class="instagram social-icon">
+                    <img src="../images/instagram.svg" alt="Instagram">
+                </div>
+                <div class="youtube social-icon">
+                    <img src="../images/youtube-play-button.svg" alt="Youtube">
+                </div>
+                <div class="twitter social-icon">
+                    <img src="../images/twitter-logo.svg" alt="Twitter">
+                </div>
+            </div>
+        </div>
+        <div class="collumn-contact">
+            <p>Find</p>
+            <p>us</p>
+            <p>@</p>
+        </div>
+        <div class="collumn-contact">
+            <p>Zirmunu str. 17, Vilnius</p>
+            <p>+37067813287</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="logo"></div>
+        <p>Coffee World</p>
+        <p>Simas Kiriliauskas © 2019</p>
+    </div>
+
+    <script type="text/javascript" src="js/slides.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+@media (min-width: 768px) and (max-width: 1024px)
+    $accent: #aeeff0
+    $primary-light: #f1f0d1
+    $primary-mid: #f0e3c4
+    $primary-dark: #584b42
+
+    $font-primary: 'El Messiri', sans-serif
+    $font-secondary: 'Livvic', sans-serif
+
+    $font-size-primary: 2.5em
+    $font-size-secondary: 1.2em
+    $font-size-small: 0.8em
+
+    =shadow()
+        -webkit-box-shadow: 0px 0px 19px -1px rgba(88,75,66,1)
+        -moz-box-shadow: 0px 0px 19px -1px rgba(88,75,66,1)
+        box-shadow: 0px 0px 19px -1px rgba(88,75,66,1)
+    =btn-shadow()
+        -webkit-box-shadow: 0px 0px 19px 0px #f1f0d1
+        -moz-box-shadow: 0px 0px 19px 0px #f1f0d1
+        box-shadow: 0px 0px 19px 0px #f1f0d1
+    = flex()
+        display: flex
+        align-content: center
+    =transition()
+        transition: all 0.3s ease-out
+
+    html, body
+        scroll-behavior: smooth
+        margin: 0
+        padding: 0
+        font-family: $font-secondary
+        nav
+            z-index: 5
+            position: fixed
+            margin: 2% 0
+            padding: 0 5%
+            width: 90%
+            top: 0
+            +flex
+            align-items: center
+            color: $primary-light
+            .logo
+                height: 7vw
+                width: 7vw
+                background-image: url("../images/Cafe-logo.png")
+                background-size: cover
+                background-position: center
+            p
+                width: 20%
+                +flex
+                align-items: center
+                font-family: $font-primary
+                font-size: $font-size-secondary
+            ul
+                padding-left: 0
+                margin-right: 5%
+                width: 50%
+                +flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                list-style-type: none
+                font-size: $font-size-secondary
+                li
+                    a
+                        font-size: $font-size-small
+                        text-decoration: none
+                        color: $primary-light
+                li:nth-child(4)
+                    a
+                        background-color: $accent
+                        color: $primary-dark
+                        padding: 5px
+                        border-radius: 5px
+            .burger
+                display: none
+                div
+                    width: 25px
+                    height: 3px
+                    background-color: $primary-light
+                    margin: 5px
+                    border-radius: 3px
+
+        #landing
+            .img-container1
+                .main-text-container
+                    color: $primary-light
+                    h1
+                        font-size: $font-size-primary
+                        font-family: $font-primary
+                    p
+                        font-size: $font-size-small
+
+        #extra
+            .img-container2
+                span, p
+                    font-size: $font-size-small
+                span
+                    font-family: $font-primary
+                    font-size: $font-size-secondary
+        #beans
+            .slide-container
+                .slide
+                    .text-box
+                        h2, h3
+                            font-size: $font-size-primary
+                            font-family: $font-primary
+                        h3
+                            font-size: $font-size-secondary
+                        p, ul
+                            font-size: $font-size-small
+        #add
+            .img-container3
+                p
+                    font-size: $font-size-small
+                    span
+                        font-family: $font-primary
+                        font-size: $font-size-primary
+
+        #menu
+            .drink-food-btn-container
+                a
+                    font-family: $font-primary
+                    font-size: $font-size-secondary
+                a:nth-child(2)
+                    background-color: $primary-mid
+            .menu-container
+                +shadow
+                color: $primary-light
+                background-color: $primary-dark
+                .collumn
+                    h3
+                        font-size: $font-size-secondary
+                        font-family: $font-primary
+                    ul
+                        font-size: $font-size-small
+        #member
+            margin: 0% 5% 2% 5%
+            height: auto
+            color: $primary-dark
+            .member-text-container
+                font-size: $font-size-small
+                .collumn
+                    background-color: $primary-light
+                .collumn:nth-child(2)
+                    background-color: $primary-mid
+        #blog
+            background-color: $primary-dark
+            color: $primary-light
+            h3
+                font-size: $font-size-secondary
+                font-family: $font-primary
+            .card-container
+                font-size: $font-size-small
+                color: $primary-dark
+                .card
+                    height: 300px
+                    background-color: $primary-light
+
+        #contact
+            .collumn-contact:nth-child(1)
+                font-size: $font-size-secondary
+                font-family: $font-primary
+            .collumn-contact:nth-child(2)
+                font-size: $font-size-small
+                background-color: $primary-mid
+                form
+                    input:nth-child(3)
+                        width: 80%
+
+        #footer
+            margin: 0% 5%
+            width: 90%
+            height: auto
+            background-color: white
+            color: $primary-dark
+            font-size: $font-size-secondary
+            +flex
+            justify-content: center
+            align-items: center
+            .logo
+                margin-left: 5%
+                height: 7vw
+                width: 7vw
+                background-image: url("../images/Cafe-logo-dark.png")
+                background-size: cover
+                background-position: center
+            p
+                width: auto
+            p:nth-child(3)
+                margin: 0
+                margin-left: 15%
